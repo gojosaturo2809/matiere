@@ -24,12 +24,12 @@ class Database extends Config
      *
      * @var array<string, mixed>
      */
-    public array $default = [
+   public array $default = [
         'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => '',
+        'hostname'     => '127.0.0.1',
+        'username'     => 'root',
         'password'     => '',
-        'database'     => '',
+        'database'     => 'matiere',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
@@ -42,6 +42,7 @@ class Database extends Config
         'strictOn'     => false,
         'failover'     => [],
         'port'         => 3306,
+        'socket'       => '/opt/lampp/var/mysql/mysql.sock',
         'numberNative' => false,
         'foundRows'    => false,
         'dateFormat'   => [
@@ -50,7 +51,6 @@ class Database extends Config
             'time'     => 'H:i:s',
         ],
     ];
-
     //    /**
     //     * Sample database connection for SQLite3.
     //     *
