@@ -9,6 +9,13 @@ class AdminController extends BaseController
 {
     public function login()
     {
+        $session = session();
+        
+        // Si l'administrateur est déjà connecté, on le redirige vers le dashboard
+        if ($session->get('isLoggedIn')) {
+            return redirect()->to('/dashboard');
+        }
+
         // Affiche la vue de connexion
         return view('login'); // <-- Juste 'login', pas 'login.html' ni 'login.php'
     }
@@ -38,11 +45,11 @@ class AdminController extends BaseController
                 return redirect()->to('/dashboard'); // Redirige vers le tableau de bord
             } else {
                 $session->setFlashdata('error', 'Mot de passe incorrect.');
-                return redirect()->to('/login');
+                return redirect()->to('/');
             }
         } else {
             $session->setFlashdata('error', 'Email introuvable.');
-            return redirect()->to('/login');
+            return redirect()->to('/');
         }
     }
 
@@ -50,6 +57,6 @@ class AdminController extends BaseController
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/login');
+        return redirect()->to('/');
     }
 }

@@ -19,7 +19,12 @@ class Etudiant extends BaseController
     public function index()
     {
         $data = [
-            'etudiants' => $this->etudiantModel->findAll(),
+            'title' => 'SysInfo - Liste des etudiants',
+            'activePage' => 'etudiants',
+            'etudiants' => $this->etudiantModel
+                ->orderBy('nom', 'ASC')
+                ->orderBy('prenom', 'ASC')
+                ->findAll(),
         ];
 
         return view('etudiants/list', $data);
