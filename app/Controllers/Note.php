@@ -22,7 +22,7 @@ class Note extends BaseController
         }
 
         return view('list', [
-            'title' => 'SysInfo — Étudiants',
+            'title' => 'SysInfo - Notes',
             'activePage' => 'notes',
             'etudiants' => $etudiants,
             'notes' => $notes,

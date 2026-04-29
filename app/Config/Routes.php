@@ -5,15 +5,16 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/dashboard', 'Dashboard::index');
-// $routes->get('dashboard', 'Dashboard::index');
+$routes->get('/', 'AdminController::login');
+$routes->get('dashboard', 'Dashboard::index');
+$routes->get('dashboard.php', 'Dashboard::index');
+$routes->get('dashboard.html', 'Dashboard::index');
 $routes->get('notes', 'Note::index');
 $routes->get('notes/create', 'Note::create');
 $routes->post('notes', 'Note::store');
-// $routes->get('/', 'Home::index');
 
 // Routes pour la Liste des Étudiants
-$routes->get('/etudiants', 'Etudiant::index');  // Liste des étudiants
+$routes->get('etudiants', 'Etudiant::index');  // Liste des étudiants
 
 // Les routes suivantes seront implémentées par les autres membres du groupe:
 // $routes->get('/etudiants/create', 'Etudiant::create');
@@ -24,7 +25,5 @@ $routes->get('/etudiants', 'Etudiant::index');  // Liste des étudiants
 // $routes->delete('/etudiants/(:num)', 'Etudiant::delete/$1');
 
 // Routes pour l'Admin
-$routes->get('/', 'AdminController::login');
-$routes->post('/admin/authenticate', 'AdminController::authenticate');
-$routes->get('/logout', 'AdminController::logout');
-// $routes->get('/dashboard', 'AdminController::dashboard'); // Assurez-vous de créer cette méthode s'il y a une redirection vers le dashboard
+$routes->post('admin/authenticate', 'AdminController::authenticate');
+$routes->get('logout', 'AdminController::logout');

@@ -35,8 +35,6 @@ class Etudiant extends Model
     protected array $casts = [
         'id_etudiant' => 'integer',
         'ETU' => 'integer',
-        'id_parcours' => 'integer',
-        'date_inscription' => 'datetime',
     ];
 
     // Callbacks

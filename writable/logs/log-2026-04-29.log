@@ -644,3 +644,143 @@ in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 08:57:27 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: notes]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:04:09 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: notes]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:04:14 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: etudiants]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Etudiant.php(22): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Etudiant->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:04:32 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: notes]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:04:37 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: notes/create]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(41): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->create()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:10:03 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: notes]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:10:03 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: etudiants]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Etudiant.php(22): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Etudiant->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:13:27 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: notes]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:13:27 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: etudiants]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Etudiant.php(27): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Etudiant->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 09:13:38 --> CodeIgniter\Exceptions\InvalidArgumentException: Field "id_parcours" is not nullable, but null was passed.
+[Method: GET, Route: etudiants]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 156.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Etudiant.php(27): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Etudiant->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
