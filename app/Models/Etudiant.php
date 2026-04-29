@@ -27,4 +27,25 @@ class Etudiant extends Model
     protected $skipValidation = false;
     protected $cleanValidationRules = true;
     protected $useTimestamps = false;
+    protected $createdField = 'date_inscription';
+    protected $updatedField = null;
+    protected $deletedField = null;
+
+    // Casts
+    protected array $casts = [
+           'id_etudiant' => 'integer',
+           'ETU' => 'integer',
+           'id_parcours' => 'integer',
+           // 'date_inscription' cast removed: handler unavailable in this environment
+    ];
+
+    // Callbacks
+    protected $beforeInsert = [];
+    protected $afterInsert = [];
+    protected $beforeUpdate = [];
+    protected $afterUpdate = [];
+    protected $beforeFind = [];
+    protected $afterFind = [];
+    protected $beforeDelete = [];
+    protected $afterDelete = [];
 }
