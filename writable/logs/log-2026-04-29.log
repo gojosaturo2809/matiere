@@ -1,0 +1,120 @@
+CRITICAL - 2026-04-29 07:42:12 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:43:55 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:43:56 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:43:56 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:43:57 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:44:55 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:44:56 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:44:57 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:46:20 --> ErrorException: Type of App\Models\Etudiant::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: notes/create]
+in APPPATH/Models/Etudiant.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-29 07:50:17 --> CodeIgniter\Exceptions\InvalidArgumentException: No such handler for "date_inscription". Invalid type: date
+[Method: GET, Route: notes/create]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 182.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(41): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->create()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 07:50:18 --> CodeIgniter\Exceptions\InvalidArgumentException: No such handler for "date_inscription". Invalid type: date
+[Method: GET, Route: notes/create]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 182.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(41): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->create()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 07:50:18 --> CodeIgniter\Exceptions\InvalidArgumentException: No such handler for "date_inscription". Invalid type: date
+[Method: GET, Route: notes/create]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 182.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(41): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->create()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 07:50:18 --> CodeIgniter\Exceptions\InvalidArgumentException: No such handler for "date_inscription". Invalid type: date
+[Method: GET, Route: notes/create]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 182.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(41): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->create()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 07:50:19 --> CodeIgniter\Exceptions\InvalidArgumentException: No such handler for "date_inscription". Invalid type: date
+[Method: GET, Route: notes/create]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 182.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(41): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->create()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-04-29 07:50:19 --> CodeIgniter\Exceptions\InvalidArgumentException: No such handler for "date_inscription". Invalid type: date
+[Method: GET, Route: notes/create]
+in SYSTEMPATH/DataCaster/DataCaster.php on line 182.
+ 1 SYSTEMPATH/DataConverter/DataConverter.php(80): CodeIgniter\DataCaster\DataCaster->castAs()
+ 2 SYSTEMPATH/BaseModel.php(1984): CodeIgniter\DataConverter\DataConverter->fromDataSource()
+ 3 SYSTEMPATH/Model.php(258): CodeIgniter\BaseModel->convertToReturnType()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Note.php(41): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Note->create()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()

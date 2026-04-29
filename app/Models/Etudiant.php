@@ -53,11 +53,11 @@ class Etudiant extends Model
     protected $deletedField = null;
 
     // Casts
-    protected $casts = [
-        'id_etudiant' => 'integer',
-        'ETU' => 'integer',
-        'id_parcours' => 'integer',
-        'date_inscription' => 'date',
+    protected array $casts = [
+           'id_etudiant' => 'integer',
+           'ETU' => 'integer',
+           'id_parcours' => 'integer',
+           // 'date_inscription' cast removed: handler unavailable in this environment
     ];
 
     // Callbacks
