@@ -17,3 +17,9 @@ $routes->get('/etudiants', 'Etudiant::index');  // Liste des étudiants
 // $routes->get('/etudiants/(:num)/edit', 'Etudiant::edit/$1');
 // $routes->put('/etudiants/(:num)', 'Etudiant::update/$1');
 // $routes->delete('/etudiants/(:num)', 'Etudiant::delete/$1');
+
+// Routes pour l'Admin
+$routes->get('/login', 'AdminController::login');
+$routes->post('/admin/authenticate', 'AdminController::authenticate');
+$routes->get('/logout', 'AdminController::logout');
+// $routes->get('/dashboard', 'AdminController::dashboard'); // Assurez-vous de créer cette méthode s'il y a une redirection vers le dashboard
