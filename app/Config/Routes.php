@@ -6,11 +6,11 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/dashboard', 'Dashboard::index');
-$routes->get('dashboard', 'Dashboard::index');
+// $routes->get('dashboard', 'Dashboard::index');
 $routes->get('notes', 'Note::index');
 $routes->get('notes/create', 'Note::create');
 $routes->post('notes', 'Note::store');
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 
 // Routes pour la Liste des Étudiants
 $routes->get('/etudiants', 'Etudiant::index');  // Liste des étudiants
@@ -24,7 +24,7 @@ $routes->get('/etudiants', 'Etudiant::index');  // Liste des étudiants
 // $routes->delete('/etudiants/(:num)', 'Etudiant::delete/$1');
 
 // Routes pour l'Admin
-$routes->get('/login', 'AdminController::login');
+$routes->get('/', 'AdminController::login');
 $routes->post('/admin/authenticate', 'AdminController::authenticate');
 $routes->get('/logout', 'AdminController::logout');
 // $routes->get('/dashboard', 'AdminController::dashboard'); // Assurez-vous de créer cette méthode s'il y a une redirection vers le dashboard
