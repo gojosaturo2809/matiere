@@ -56,3 +56,43 @@ INSERT INTO Programme (id_semestre, code_ue, est_optionnel) VALUES
 (3, 'INF208', FALSE),
 (3, 'MTH201', FALSE),
 (3, 'ORG201', FALSE);
+
+
+INSERT INTO UniteEnseignement (code_ue, intitule, credits) VALUES 
+('INF204', 'Système d''information géographique', 6),
+('INF205', 'Système d''information', 6),
+('INF206', 'Interface Homme/Machine', 6),
+('INF207', 'Eléments d''algorithmique', 6),
+('INF209', 'Web dynamique', 6),
+('INF210', 'Mini-projet de développement', 10),
+('INF211', 'Mini-projet de bases de données et/ou de réseaux', 10),
+('INF212', 'Mini-projet de Web et design', 10),
+('MTH202', 'Analyse des données', 4),
+('MTH203', 'MAO', 4),
+('MTH204', 'Géométrie', 4),
+('MTH205', 'Equations différentielles', 4),
+('MTH206', 'Optimisation', 4);
+
+-- (id_parcours 1 = Développement)
+INSERT INTO Programme (id_parcours, id_semestre, code_ue, est_optionnel) VALUES 
+(1, 4, 'INF204', TRUE), (1, 4, 'INF205', TRUE), (1, 4, 'INF206', TRUE), -- 1 UE parmi ces 3
+(1, 4, 'INF207', FALSE),
+(1, 4, 'INF210', FALSE),
+(1, 4, 'MTH204', TRUE), (1, 4, 'MTH205', TRUE), (1, 4, 'MTH206', TRUE), -- 1 UE parmi ces 3
+(1, 4, 'MTH203', FALSE);
+
+-- (id_parcours 2 = Bases de Données et Réseaux)
+INSERT INTO Programme (id_parcours, id_semestre, code_ue, est_optionnel) VALUES 
+(2, 4, 'INF205', FALSE),
+(2, 4, 'INF204', TRUE), (2, 4, 'INF206', TRUE), (2, 4, 'INF207', TRUE), -- 1 UE parmi ces 3
+(2, 4, 'INF211', FALSE),
+(2, 4, 'MTH202', TRUE), (2, 4, 'MTH205', TRUE), (2, 4, 'MTH206', TRUE), -- 1 UE parmi ces 3
+(2, 4, 'MTH203', FALSE);
+
+-- (id_parcours 3 = Web et Design)
+INSERT INTO Programme (id_parcours, id_semestre, code_ue, est_optionnel) VALUES 
+(3, 4, 'INF204', TRUE), (3, 4, 'INF205', TRUE), (3, 4, 'INF206', TRUE), -- 1 UE parmi ces 3
+(3, 4, 'INF209', FALSE),
+(3, 4, 'INF212', FALSE),
+(3, 4, 'MTH202', TRUE), (3, 4, 'MTH204', TRUE), (3, 4, 'MTH206', TRUE), -- 1 UE parmi ces 3
+(3, 4, 'MTH203', FALSE);
