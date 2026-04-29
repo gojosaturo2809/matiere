@@ -8,3 +8,8 @@ CREATE TABLE Etudiant (
     date_inscription DATE DEFAULT (CURRENT_DATE),
     FOREIGN KEY (id_parcours) REFERENCES Parcours(id_parcours)
 );
+
+INSERT INTO Etudiant (ETU, nom, prenom, email) 
+VALUES 
+(20241001, 'Dupont', 'Jean', 'jean.dupont@example.com'),
+(20241002, 'Martin', 'Marie', 'marie.martin@example.com');
