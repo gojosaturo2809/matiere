@@ -15,8 +15,6 @@ class Note extends Model
         'id_etudiant',
         'code_ue',
         'note',
-        'coefficient',
-        'session_note',
         'commentaire',
         'date_saisie',
     ];
@@ -25,8 +23,6 @@ class Note extends Model
         'id_etudiant' => 'required|integer',
         'code_ue' => 'required|string|max_length[10]',
         'note' => 'required|decimal|greater_than_equal_to[0]|less_than_equal_to[20]',
-        'coefficient' => 'permit_empty|decimal|greater_than[0]',
-        'session_note' => 'permit_empty|string|max_length[20]',
         'commentaire' => 'permit_empty|string|max_length[1000]',
     ];
 
@@ -57,7 +53,6 @@ class Note extends Model
     protected array $casts = [
         'id_note' => 'integer',
         'id_etudiant' => 'integer',
-        'note' => 'float', // Ensure this is explicitly typed
-        'coefficient' => 'float', // Ensure this is explicitly typed
+        'note' => 'float',
     ];
 }

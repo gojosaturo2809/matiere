@@ -8,25 +8,53 @@ use App\Models\UniteEnseignement;
 
 class Note extends BaseController
 {
-    public function index(): string
+    public function index($id = null): string|\CodeIgniter\HTTP\RedirectResponse
     {
         $etudiantModel = new Etudiant();
         $noteModel = new NoteModel();
 
-        $etudiants = $etudiantModel->orderBy('nom', 'ASC')->findAll();
-        $notes = $noteModel->orderBy('date_saisie', 'DESC')->findAll();
+        $etudiants = $etudiantModel->orderBy('nom', 'ASC')->orderBy('prenom', 'ASC')->findAll();
 
-        $etudiantIndex = [];
-        foreach ($etudiants as $etudiant) {
-            $etudiantIndex[$etudiant['id_etudiant']] = $etudiant;
+        if ($id !== null) {
+            $student = $etudiantModel->find((int) $id);
+
+            if (! $student) {
+                return redirect()->to(site_url('notes'))->with('error', 'Étudiant non trouvé.');
+            }
+
+            $etudiants = [$student];
         }
 
-        return view('list', [
+        $notes = $noteModel
+            ->select('Note.id_note, Note.id_etudiant, Note.code_ue, Note.note, Note.commentaire, Note.date_saisie, Etudiant.ETU, Etudiant.nom, Etudiant.prenom')
+            ->join('Etudiant', 'Etudiant.id_etudiant = Note.id_etudiant', 'left')
+            ->orderBy('Etudiant.nom', 'ASC')
+            ->orderBy('Etudiant.prenom', 'ASC')
+            ->orderBy('Note.date_saisie', 'DESC')
+            ->findAll();
+
+        $notesByStudent = [];
+        foreach ($notes as $note) {
+            $studentId = (int) ($note['id_etudiant'] ?? 0);
+            if ($studentId > 0) {
+                $notesByStudent[$studentId][] = $note;
+            }
+        }
+
+        $studentSections = [];
+        foreach ($etudiants as $etudiant) {
+            $studentId = (int) ($etudiant['id_etudiant'] ?? 0);
+            $studentSections[] = [
+                'etudiant' => $etudiant,
+                'notes' => $notesByStudent[$studentId] ?? [],
+            ];
+        }
+
+        return view('notes/index', [
             'title' => 'SysInfo — Étudiants',
             'activePage' => 'notes',
-            'etudiants' => $etudiants,
-            'notes' => $notes,
-            'etudiantIndex' => $etudiantIndex,
+            'studentSections' => $studentSections,
+            'filteredStudent' => $id !== null,
         ]);
     }
 
@@ -51,8 +79,6 @@ class Note extends BaseController
             'id_etudiant' => 'required|integer',
             'code_ue' => 'required|string|max_length[10]',
             'note' => 'required|decimal|greater_than_equal_to[0]|less_than_equal_to[20]',
-            'coefficient' => 'permit_empty|decimal|greater_than[0]',
-            'session_note' => 'permit_empty|string|max_length[20]',
             'commentaire' => 'permit_empty|string|max_length[1000]',
         ];
 
@@ -76,8 +102,6 @@ class Note extends BaseController
             'id_etudiant',
             'code_ue',
             'note',
-            'coefficient',
-            'session_note',
             'commentaire',
         ]);
 
@@ -89,11 +113,27 @@ class Note extends BaseController
             'id_etudiant' => (int) $data['id_etudiant'],
             'code_ue' => trim((string) $data['code_ue']),
             'note' => (float) $data['note'],
-            'coefficient' => $data['coefficient'] !== null && $data['coefficient'] !== '' ? (float) $data['coefficient'] : 1,
-            'session_note' => trim((string) ($data['session_note'] ?? 'Normale')) ?: 'Normale',
             'commentaire' => trim((string) ($data['commentaire'] ?? '')),
         ]);
 
         return redirect()->to(site_url('notes'))->with('success', 'La note a été enregistrée.');
+    }
+
+    public function delete($id = null)
+    {
+        if ($id === null) {
+            return redirect()->to('notes')->with('error', 'Note non trouvée.');
+        }
+
+        $noteModel = new NoteModel();
+        $note = $noteModel->find((int) $id);
+
+        if (! $note) {
+            return redirect()->to('notes')->with('error', 'Note non trouvée.');
+        }
+
+        $noteModel->delete((int) $id);
+
+        return redirect()->back()->with('success', 'La note a été supprimée.');
     }
 }

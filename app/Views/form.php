@@ -74,17 +74,6 @@
           <label class="field-label">Note /20 <span class="required">*</span></label>
           <input type="number" name="note" value="<?= esc(old('note', '0')) ?>" min="0" max="20" step="0.01" required />
         </div>
-        <div>
-          <label class="field-label">Coefficient</label>
-          <input type="number" name="coefficient" value="<?= esc(old('coefficient', '1')) ?>" min="0.1" step="0.1" />
-        </div>
-        <div>
-          <label class="field-label">Session</label>
-          <select name="session_note">
-            <option value="Normale" <?= old('session_note', 'Normale') === 'Normale' ? 'selected' : '' ?>>Normale</option>
-            <option value="Rattrapage" <?= old('session_note') === 'Rattrapage' ? 'selected' : '' ?>>Rattrapage</option>
-          </select>
-        </div>
       </div>
 
       <div class="form-grid cols-1">

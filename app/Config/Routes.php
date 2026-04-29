@@ -7,13 +7,18 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('dashboard', 'Dashboard::index');
+$routes->get('releve', 'Releve::index');
+$routes->get('releve/fiche/(:num)', 'Releve::ficheEtudiant/$1');
 $routes->get('notes', 'Note::index');
+$routes->get('notes/(:num)', 'Note::index/$1');
 $routes->get('notes/create', 'Note::create');
 $routes->post('notes', 'Note::store');
+$routes->delete('notes/(:num)', 'Note::delete/$1');
 $routes->get('/', 'Home::index');
 
 // Routes pour la Liste des Étudiants
 $routes->get('/etudiants', 'Etudiant::index');  // Liste des étudiants
+$routes->get('/etudiants/(:num)', 'Releve::ficheEtudiant/$1');
 
 // Les routes suivantes seront implémentées par les autres membres du groupe:
 // $routes->get('/etudiants/create', 'Etudiant::create');

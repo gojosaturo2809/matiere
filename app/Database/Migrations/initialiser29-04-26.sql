@@ -96,3 +96,4 @@ INSERT INTO Programme (id_parcours, id_semestre, code_ue, est_optionnel) VALUES
 (3, 4, 'INF212', FALSE),
 (3, 4, 'MTH202', TRUE), (3, 4, 'MTH204', TRUE), (3, 4, 'MTH206', TRUE), -- 1 UE parmi ces 3
 (3, 4, 'MTH203', FALSE);
+

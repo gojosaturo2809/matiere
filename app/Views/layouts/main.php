@@ -34,6 +34,10 @@
       <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
       Saisie note
     </a>
+    <a href="<?= site_url('releve') ?>" class="nav-item <?= (($activePage ?? '') === 'releve') ? 'active' : '' ?>">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h5"/></svg>
+      Relevé
+    </a>
 
     <div class="sidebar-bottom">
       <a href="<?= site_url('login') ?>" class="user-row">
